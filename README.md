@@ -40,7 +40,9 @@ git comes installed on Mac OS.  Unfortunately, git does not come installed on Wi
  
 Now, go to your computer and open a Terminal window (on Mac) or Git BASH (on Windows) and say:
 
+```
 git clone https://github.com/…   (providing the URL you just copied)
+```
 
 You should see a copy of the repository on your laptop.
 
@@ -48,14 +50,18 @@ Go into the src folder of the repository and write a program to print out Hello,
 
 Once it works, you should commit your code:
 
+```
 git add src/HelloWorld.java 
 git commit -m "1st version of hello world"
+```
 
 The git add line tells git which files you want to commit.  The git commit line does the commit and records the message given with the -m argument as the commit message.
 
 Finally, you should push the changes to GitHub:
 
+```
 git push
+```
 
 This will copy your commits back to github.  So, go to GitHub in your browser and make sure the changes are there.
 
@@ -71,7 +77,9 @@ Return to GitHub and see that the change is there.
 
 Now, let’s mark the issue as completed.  We are also going to record which commit contains this implementation.  So click on the Code tab on Github.  It should say there are 2 commits (or maybe more).  Click on commits and it will show you when the commits were made and the commit messages.  At the right side of the window, for each commit, you will see something that looks like this:
 
+```
 a6ca6eb
+```
 
 The funny-looking "number" is the commit number.  Right click on it and copy the link.  Now click on Issues and the issue you just created.  Write a comment that says you implemented this and paste in the commit number.  Then click "Close issue".
 
