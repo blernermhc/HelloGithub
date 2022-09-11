@@ -36,6 +36,15 @@ You should see a button labelled "Clone or download".  Click on that and copy th
   
 git comes installed on Mac OS.  Unfortunately, git does not come installed on Windows.  This looks like a good place to get it from:  https://gitforwindows.org/
 
+## Installing git
+Mac instructions: If you have the Developer Tools installed on your Mac, you already have git.  For the moment let’s assume you do, but if using the git command below gives you an error, you can install the developer tools with this command:  
+
+```
+Xcode-select --install
+```
+
+Windows instructions: There seem to be many ways to install git on Windows.  This looks like a good place to get it from:  [https://gitforwindows.org/](https://gitforwindows.org/) 
+
 ## Using git from the command line
  
 Now, go to your computer and open a Terminal window (on Mac) or Git BASH (on Windows) and say:
@@ -51,11 +60,12 @@ Go into the src folder of the repository and write a program to print out Hello,
 Once it works, you should commit your code:
 
 ```
-git add src/HelloWorld.java 
+git add src/HelloWorld.java
 git commit -m "1st version of hello world"
 ```
 
-The git add line tells git which files you want to commit.  The git commit line does the commit and records the message given with the -m argument as the commit message.
+The git add line tells git which files you
+ want to commit.  The git commit line does the commit and records the message given with the -m argument as the commit message.
 
 Finally, you should push the changes to GitHub:
 
@@ -91,10 +101,8 @@ We will be learning more about GitHub in coming weeks but this should be enough 
 
 ## Using GitHub inside Eclipse (skip if you would like to just use github from the command line)
 
-There is also a plugin that can be used with Eclipse.  Go to
- 
-https://download.eclipse.org/egit/updates/
-
+There is also a plugin that can be used with Eclipse.  Go to  
+[https://download.eclipse.org/egit/updates/](https://download.eclipse.org/egit/updates/) and click the "see how" link.
 for instructions on how to install the plugin.
 
 Here are instructions on how to do the various git commands from inside Eclipse, but you will need to refer back to the previous section to see how I want you to work with github today.
